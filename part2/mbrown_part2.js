@@ -14,3 +14,9 @@ console.log("B2.2 Object:", myMovie);
 myMovie.rating = 5;
 myMovie.summary = "World War II movie about the Normandy landings";
 console.log("B2.3 After adding:", myMovie);
+
+//B2.4: Change Properties
+
+myMovie.rating = 4;
+myMovie.year = 1962;
+console.log("B2.4 After changing:", myMovie);
