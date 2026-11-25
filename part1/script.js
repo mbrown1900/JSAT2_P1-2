@@ -56,3 +56,33 @@ function sequentialsearch(array, value) {
 
 console.log("B1.6 Search for 25:", sequentialsearch(numbers, 25));
 console.log("B1.6 Search for 99:", sequentialsearch(numbers, 99));
+
+// B1.7 Binary Search
+
+// binarySearch - cuts search area in half
+// array - the sorted list to search
+// value - the number to find
+// returns the position of the number, or -1 if it is not found
+function binarySearch(array, value) {
+  // low - the start of the part we are still searching
+  let low = 0;
+  // high - the end of the part we are still searching
+  let high = array.length - 1;
+
+  while (low <= high) {
+    // middle - the position halfway between low and high
+    let middle = Math.floor((low + high) / 2);
+
+    if (array[middle] === value) {
+      return middle;
+    } else if (array[middle] < value) {
+      low = middle + 1;
+    } else {
+      high = middle - 1;
+    }
+  }
+  return -1;
+}
+
+console.log("B1.7 Search for 25:", binarySearch(numbers, 25));
+console.log("B1.7 Search for 99:", binarySearch(numbers, 99));
