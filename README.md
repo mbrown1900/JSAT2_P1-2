@@ -1,2 +1,2 @@
-# JSTAT2
+# JSAT2
 Assignment 2
