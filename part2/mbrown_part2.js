@@ -9,3 +9,8 @@ let myMovie = {
   year: 1964
 };
 console.log("B2.2 Object:", myMovie);
+
+//B2.3: Add new properties
+myMovie.rating = 5;
+myMovie.summary = "World War II movie about the Normandy landings";
+console.log("B2.3 After adding:", myMovie);
