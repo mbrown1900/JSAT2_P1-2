@@ -15,3 +15,16 @@ numbers.sort(function (a, b) {
   return a - b;
 });
 console.log("B1.3 Sorted:", numbers);
+
+// B1.4: Insert 19, 23 and 30
+
+// add the new numbers to the end of the array
+numbers.push(19);
+numbers.push(23);
+numbers.push(30);
+
+// sort again so the array stays in order
+numbers.sort(function (a, b) {
+  return a - b;
+});
+console.log("B1.4 After insert:", numbers);
