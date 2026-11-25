@@ -44,7 +44,7 @@ console.log("B1.5 After remove:", numbers);
 // sequentialsearch - checks each item one by one
 // array - the list to search
 // value - the number to find
-function sequentialsearch(array, value) {
+function sequentialSearch(array, value) {
   // i - the position we are checking
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
@@ -54,10 +54,10 @@ function sequentialsearch(array, value) {
   return -1;
 }
 
-console.log("B1.6 Search for 25:", sequentialsearch(numbers, 25));
-console.log("B1.6 Search for 99:", sequentialsearch(numbers, 99));
+console.log("B1.6 Search for 25:", sequentialSearch(numbers, 25));
+console.log("B1.6 Search for 99:", sequentialSearch(numbers, 99));
 
-// B1.7 Binary Search
+// B1.7: Binary Search
 
 // binarySearch - cuts search area in half
 // array - the sorted list to search
@@ -86,3 +86,22 @@ function binarySearch(array, value) {
 
 console.log("B1.7 Search for 25:", binarySearch(numbers, 25));
 console.log("B1.7 Search for 99:", binarySearch(numbers, 99));
+
+//Tests for squential search
+
+console.log("Test1-sS",sequentialSearch(numbers, 3));
+console.log("Test2-sS",sequentialSearch(numbers, 45));
+console.log("Test3-sS",sequentialSearch(numbers, 19));
+console.log("Test4-sS",sequentialSearch(numbers, 25));
+console.log("Test5-sS",sequentialSearch(numbers, 99));
+console.log("Test6-sS",sequentialSearch(numbers, 8));
+console.log("Test7-sS",sequentialSearch([], 5));
+
+//Tests for binary search
+console.log("Test1-SS",binarySearch(numbers, 3));
+console.log("Test2-SS",binarySearch(numbers, 45));
+console.log("Test3-SS",binarySearch(numbers, 19));
+console.log("Test4-SS",binarySearch(numbers, 25));
+console.log("Test5-SS",binarySearch(numbers, 99));
+console.log("Test6-SS",binarySearch(numbers, 8));
+console.log("Test7-SS",binarySearch([], 5));
