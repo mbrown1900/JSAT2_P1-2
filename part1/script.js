@@ -38,3 +38,21 @@ numbers.splice(position, 1);
 position = numbers.indexOf(31);
 numbers.splice(position, 1);
 console.log("B1.5 After remove:", numbers);
+
+// B1.6: Sequential search
+
+// sequentialsearch - checks each item one by one
+// array - the list to search
+// value - the number to find
+function sequentialsearch(array, value) {
+  // i - the position we are checking
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log("B1.6 Search for 25:", sequentialsearch(numbers, 25));
+console.log("B1.6 Search for 99:", sequentialsearch(numbers, 99));
