@@ -20,3 +20,8 @@ console.log("B2.3 After adding:", myMovie);
 myMovie.rating = 4;
 myMovie.year = 1962;
 console.log("B2.4 After changing:", myMovie);
+
+//B2.5: Delete Property
+
+delete myMovie.summary;
+console.log("B2.5 After removing:", myMovie);
