@@ -28,3 +28,13 @@ numbers.sort(function (a, b) {
   return a - b;
 });
 console.log("B1.4 After insert:", numbers);
+
+// B1.5: Remove 8 and 31 
+
+// position - where the number is in the array
+let position = numbers.indexOf(8);
+numbers.splice(position, 1);
+
+position = numbers.indexOf(31);
+numbers.splice(position, 1);
+console.log("B1.5 After remove:", numbers);
